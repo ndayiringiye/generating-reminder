@@ -5,8 +5,16 @@ function myFunction(a, b) {
     }
      
     console.log(myFunction(1, 2))
-    // expected: 3 
     console.log(myFunction(1, 10))
-    // expected: 11 
     console.log(myFunction(99, 1))
-    // expected: 100 
+
+    function myStrickComparison(a, b) {
+           return a === b ;
+        }
+         
+        console.log(myStrickComparison(2, 3))
+        // expected: false 
+        console.log(myStrickComparison(1, '1'))
+        // expected: false 
+        console.log(myStrickComparison('10', '10'))
+        // expected: true 
